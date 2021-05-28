@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Hugo - Tag - 东南亚摘椰子小熊猫</title>
+        <link>https://yiyichen2020.github.io/tags/hugo/</link>
+        <description>Hugo - Tag - 东南亚摘椰子小熊猫</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 27 May 2021 23:18:32 -0700</lastBuildDate><atom:link href="https://yiyichen2020.github.io/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+    <title>Deploy Hugo and Further</title>
+    <link>https://yiyichen2020.github.io/deploy_hugo_on_github/</link>
+    <pubDate>Thu, 27 May 2021 23:18:32 -0700</pubDate>
+    <author>Author</author>
+    <guid>https://yiyichen2020.github.io/deploy_hugo_on_github/</guid>
+    <description><![CDATA[Deploy Hugo and Further  The following operations is based on the post, &ldquo;Hugo With LoveIt Theme Configuration&rdquo;, which requires you have already installed and config both Hugo and LoveIt theme.
+ 1. Deploy Hugo on Github  Assume you have already got a Github account.
+  Create a Github Repository, name this repository as yourgithubname.github.io.
+  Open your terminal, and cd to your blog folder.
+  Run following command lines:]]></description>
+</item><item>
+    <title>Hugo and LoveIt Theme Config</title>
+    <link>https://yiyichen2020.github.io/hugo_and_loveit_theme_config/</link>
+    <pubDate>Thu, 27 May 2021 16:56:24 -0700</pubDate>
+    <author>Author</author>
+    <guid>https://yiyichen2020.github.io/hugo_and_loveit_theme_config/</guid>
+    <description><![CDATA[Hugo With LoveIt Theme Configuration This post is for MacOS and Homebrew User 0. Install Homebrew 1 ruby -e &#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&#34; 1. Install Hugo 1 2 3 4 5 6 7 8 9 # Install hugo by homebrew brew install hugo # Make sure that you install hugo successfully hugo version # Cd to Desktop directory cd Desktop # Create new hugo site in Desktop directory hugo new site]]></description>
+</item></channel>
+</rss>
