@@ -5,15 +5,11 @@
         <description>All Posts | 东南亚摘椰子小熊猫</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 27 May 2021 23:18:32 -0700</lastBuildDate><atom:link href="https://yiyichen2020.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Deploy Hugo and Further</title>
-    <link>https://yiyichen2020.github.io/deploy_hugo_on_github/</link>
+    <link>https://yiyichen2020.github.io/deploy_hugo_and_further/</link>
     <pubDate>Thu, 27 May 2021 23:18:32 -0700</pubDate>
     <author>Author</author>
-    <guid>https://yiyichen2020.github.io/deploy_hugo_on_github/</guid>
-    <description><![CDATA[Deploy Hugo and Further  The following operations is based on the post, &ldquo;Hugo With LoveIt Theme Configuration&rdquo;, which requires you have already installed and config both Hugo and LoveIt theme.
- 1. Deploy Hugo on Github  Assume you have already got a Github account.
-  Create a Github Repository, name this repository as yourgithubname.github.io.
-  Open your terminal, and cd to your blog folder.
-  Run following command lines:]]></description>
+    <guid>https://yiyichen2020.github.io/deploy_hugo_and_further/</guid>
+    <description><![CDATA[Deploy Hugo and Further The following operations is based on the post, &ldquo;Hugo With LoveIt Theme Configuration&rdquo;, which requires you have already installed and config both Hugo and LoveIt theme. 1. Deploy Hugo on Github Assume you have already got a Github account. Create a Github Repository, name this repository as yourgithubname.github.io. Open your terminal, and cd to your blog folder. Run following command lines: 1 2 3 4 5]]></description>
 </item><item>
     <title>Hugo and LoveIt Theme Config</title>
     <link>https://yiyichen2020.github.io/hugo_and_loveit_theme_config/</link>

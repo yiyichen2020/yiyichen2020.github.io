@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Deploy Hugo and Further - 东南亚摘椰子小熊猫</title><meta name="Description" content="做题家小熊猫"><meta property="og:title" content="Deploy Hugo and Further" />
+<meta property="og:description" content="Deploy Hugo and Further The following operations is based on the post, &ldquo;Hugo With LoveIt Theme Configuration&rdquo;, which requires you have already installed and config both Hugo and LoveIt theme. 1. Deploy Hugo on Github Assume you have already got a Github account. Create a Github Repository, name this repository as yourgithubname.github.io. Open your terminal, and cd to your blog folder. Run following command lines: 1 2 3 4 5" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yiyichen2020.github.io/deploy_hugo_and_further/" /><meta property="og:image" content="https://yiyichen2020.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-05-27T23:18:32-07:00" />
+<meta property="article:modified_time" content="2021-05-27T23:18:32-07:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://yiyichen2020.github.io/logo.png"/>
+
+<meta name="twitter:title" content="Deploy Hugo and Further"/>
+<meta name="twitter:description" content="Deploy Hugo and Further The following operations is based on the post, &ldquo;Hugo With LoveIt Theme Configuration&rdquo;, which requires you have already installed and config both Hugo and LoveIt theme. 1. Deploy Hugo on Github Assume you have already got a Github account. Create a Github Repository, name this repository as yourgithubname.github.io. Open your terminal, and cd to your blog folder. Run following command lines: 1 2 3 4 5"/>
+<meta name="application-name" content="Red Panda">
+<meta name="apple-mobile-web-app-title" content="Red Panda"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://yiyichen2020.github.io/deploy_hugo_and_further/" /><link rel="prev" href="https://yiyichen2020.github.io/hugo_and_loveit_theme_config/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Deploy Hugo and Further",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/yiyichen2020.github.io\/deploy_hugo_and_further\/"
+        },"image": ["https:\/\/yiyichen2020.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Hugo, Deploy","wordcount":  510 ,
+        "url": "https:\/\/yiyichen2020.github.io\/deploy_hugo_and_further\/","datePublished": "2021-05-27T23:18:32-07:00","dateModified": "2021-05-27T23:18:32-07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/yiyichen2020.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Red Panda"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="东南亚摘椰子小熊猫"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>Red Panda</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/" title="GitHub"><i class='fab fa-github fa-fw'></i> Github </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="东南亚摘椰子小熊猫"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>Red Panda</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/" title="GitHub"><i class='fab fa-github fa-fw'></i>Github</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Deploy Hugo and Further</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Red Panda</a></span>&nbsp;<span class="post-category">included in <a href="/categories/blog/"><i class="far fa-folder fa-fw"></i>Blog</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-27">2021-05-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;510 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#deploy-hugo-and-further">Deploy Hugo and Further</a>
+      <ul>
+        <li><a href="#1-deploy-hugo-on-github">1. Deploy Hugo on Github</a></li>
+        <li><a href="#2advance">2.Advance</a>
+          <ul>
+            <li><a href="#1-add-comment-box-to-your-blog">1. Add Comment Box to Your Blog</a></li>
+            <li><a href="#2-add-advanced-search-algolia-ability-to-your-blog">2. Add Advanced Search (Algolia) Ability to Your Blog</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h1 id="deploy-hugo-and-further">Deploy Hugo and Further</h1>
+<blockquote>
+<p>The following operations is based on the post, &ldquo;Hugo With LoveIt Theme Configuration&rdquo;, which requires you have already installed and config both <strong>Hugo</strong> and <strong>LoveIt</strong> theme.</p>
+</blockquote>
+<h2 id="1-deploy-hugo-on-github">1. Deploy Hugo on Github</h2>
+<ol start="0">
+<li>
+<p>Assume you have already got a Github account.</p>
+</li>
+<li>
+<p>Create a Github Repository, name this repository as <code>yourgithubname.github.io</code>.</p>
+</li>
+<li>
+<p>Open your terminal, and <code>cd</code> to your blog folder.</p>
+</li>
+<li>
+<p>Run following command lines:</p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">hugo --theme<span class="o">=</span>loveit --baseUrl<span class="o">=</span><span class="s2">&#34;https://yourgithubname.github.io/&#34;</span>
+ <span class="c1"># To build static pages, which will generate public folder</span>
+<span class="nb">cd</span> public
+git init
+git remote add origin https://github.com/yourgithubname/yourgithubname.github.io.git
+git add .
+git commit -m <span class="s2">&#34;first commit&#34;</span>
+git push
+</code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>After a few seconds, your blog is online!</li>
+</ol>
+<h2 id="2advance">2.Advance</h2>
+<h3 id="1-add-comment-box-to-your-blog">1. Add Comment Box to Your Blog</h3>
+<ol>
+<li>Install utterances on your repo.</li>
+</ol>
+<blockquote>
+<p>The easiest way for you to add comment box is adding utterances.es comment box. Here is the brief intruduction of utterances.es: <a href="https://utteranc.es/">https://utteranc.es/</a></p>
+</blockquote>
+<ol start="2">
+<li>Open <code>quickstart/config.toml</code> file, and set utterances.es related setting like following.</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">[params.page.comment.utterances]
+    enable = true
+    # owner/repo
+    repo = &#34;yourgithubname/yourgithubname.github.io&#34;
+    issueTerm = &#34;pathname&#34;
+    label = &#34;&#34;
+    lightTheme = &#34;github-light&#34;
+    darkTheme = &#34;github-dark&#34;
+</code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>Set <code>enable = false</code> under <code>[params.page.comment.valine]</code></li>
+<li>Rebuild your blog and redeploy your public folder.</li>
+<li>Enjoy commenting🍻</li>
+</ol>
+<h3 id="2-add-advanced-search-algolia-ability-to-your-blog">2. Add Advanced Search (Algolia) Ability to Your Blog</h3>
+<ol>
+<li>Create algolia account: <a href="https://www.algolia.com/">https://www.algolia.com/</a></li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/Deploy_Hugo_and_Further/img1.png"
+        data-srcset="/Deploy_Hugo_and_Further/img1.png, /Deploy_Hugo_and_Further/img1.png 1.5x, /Deploy_Hugo_and_Further/img1.png 2x"
+        data-sizes="auto"
+        alt="/Deploy_Hugo_and_Further/img1.png"
+        title="img1" /></p>
+<ol start="2">
+<li>Create an application under your algolia account; [Choose <code>Experienced User</code>, continue all the way down]</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/Deploy_Hugo_and_Further/img2.png"
+        data-srcset="/Deploy_Hugo_and_Further/img2.png, /Deploy_Hugo_and_Further/img2.png 1.5x, /Deploy_Hugo_and_Further/img2.png 2x"
+        data-sizes="auto"
+        alt="/Deploy_Hugo_and_Further/img2.png"
+        title="img2" /></p>
+<ol start="3">
+<li>Configure your application; [Click <code>Indice</code> in the left sidebar, click <code>Create Index</code> in the right sidebar just pop out, choose a name you like as <code>Index name</code>]</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/Deploy_Hugo_and_Further/img3.png"
+        data-srcset="/Deploy_Hugo_and_Further/img3.png, /Deploy_Hugo_and_Further/img3.png 1.5x, /Deploy_Hugo_and_Further/img3.png 2x"
+        data-sizes="auto"
+        alt="/Deploy_Hugo_and_Further/img3.png"
+        title="img3" /></p>
+<ol start="4">
+<li>Add your algolia application related <code>API Keys</code> into your config.toml file. You can find <code>API Key</code> on the sidebar in algolia website.</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/Deploy_Hugo_and_Further/img4.png"
+        data-srcset="/Deploy_Hugo_and_Further/img4.png, /Deploy_Hugo_and_Further/img4.png 1.5x, /Deploy_Hugo_and_Further/img4.png 2x"
+        data-sizes="auto"
+        alt="/Deploy_Hugo_and_Further/img4.png"
+        title="img4" /></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">search</span><span class="p">]</span>
+        <span class="nx">enable</span> <span class="p">=</span> <span class="kc">true</span>
+        <span class="c"># 搜索引擎的类型 (&#34;lunr&#34;, &#34;algolia&#34;)</span>
+        <span class="nx">type</span> <span class="p">=</span> <span class="s2">&#34;algolia&#34;</span>
+        <span class="c"># 文章内容最长索引长度</span>
+        <span class="nx">contentLength</span> <span class="p">=</span> <span class="mi">4000</span>
+        <span class="c"># 搜索框的占位提示语</span>
+        <span class="nx">placeholder</span> <span class="p">=</span> <span class="s2">&#34;&#34;</span>
+        <span class="c"># 最大结果数目</span>
+        <span class="nx">maxResultLength</span> <span class="p">=</span> <span class="mi">10</span>
+        <span class="c"># 结果内容片段长度</span>
+        <span class="nx">snippetLength</span> <span class="p">=</span> <span class="mi">50</span>
+        <span class="c"># 搜索结果中高亮部分的 HTML 标签</span>
+        <span class="nx">highlightTag</span> <span class="p">=</span> <span class="s2">&#34;em&#34;</span>
+        <span class="c"># 是否在搜索索引中使用基于 baseURL 的绝对路径</span>
+        <span class="nx">absoluteURL</span> <span class="p">=</span> <span class="kc">true</span>
+        <span class="p">[</span><span class="nx">languages</span><span class="p">.</span><span class="nx">en</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">search</span><span class="p">.</span><span class="nx">algolia</span><span class="p">]</span>
+          <span class="nx">index</span> <span class="p">=</span> <span class="s2">&#34;application-name&#34;</span>
+          <span class="nx">appID</span> <span class="p">=</span> <span class="s2">&#34;Application ID&#34;</span>
+          <span class="nx">searchKey</span> <span class="p">=</span> <span class="s2">&#34;Search-Only API Key&#34;</span>
+      <span class="c"># 主页信息设置</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>Uncomment <code>home = [&quot;HTML&quot;, &quot;RSS&quot;, &quot;JSON&quot;]</code> under <code>[outputs]</code> in your config.toml file</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">outputs</span><span class="p">]</span>
+    <span class="nx">home</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;HTML&#34;</span><span class="p">,</span> <span class="s2">&#34;RSS&#34;</span><span class="p">,</span> <span class="s2">&#34;JSON&#34;</span><span class="p">]</span>
+<span class="c">#   page = [&#34;HTML&#34;, &#34;MarkDown&#34;]</span>
+<span class="c">#   section = [&#34;HTML&#34;, &#34;RSS&#34;]</span>
+<span class="c">#   taxonomy = [&#34;HTML&#34;, &#34;RSS&#34;]</span>
+<span class="c">#   taxonomyTerm = [&#34;HTML&#34;]</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="6">
+<li>Cd to your blog directory and Rebuild Hugo Blog. You can find there is a index.json file under quickstart/public folder. Upload index.json to your algolia application</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/Deploy_Hugo_and_Further/img5.png"
+        data-srcset="/Deploy_Hugo_and_Further/img5.png, /Deploy_Hugo_and_Further/img5.png 1.5x, /Deploy_Hugo_and_Further/img5.png 2x"
+        data-sizes="auto"
+        alt="/Deploy_Hugo_and_Further/img5.png"
+        title="img5" /></p>
+<ol start="7">
+<li>Redeploy your site, enjoy searching!</li>
+</ol>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/Deploy_Hugo_and_Further/img6.png"
+        data-srcset="/Deploy_Hugo_and_Further/img6.png, /Deploy_Hugo_and_Further/img6.png 1.5x, /Deploy_Hugo_and_Further/img6.png 2x"
+        data-sizes="auto"
+        alt="/Deploy_Hugo_and_Further/img6.png"
+        title="img6" /></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-05-27</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://yiyichen2020.github.io/deploy_hugo_and_further/" data-title="Deploy Hugo and Further" data-hashtags="Hugo,Deploy"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://yiyichen2020.github.io/deploy_hugo_and_further/" data-hashtag="Hugo"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://yiyichen2020.github.io/deploy_hugo_and_further/" data-title="Deploy Hugo and Further"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://yiyichen2020.github.io/deploy_hugo_and_further/" data-title="Deploy Hugo and Further"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://yiyichen2020.github.io/deploy_hugo_and_further/" data-title="Deploy Hugo and Further"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/hugo/">Hugo</a>,&nbsp;<a href="/tags/deploy/">Deploy</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/hugo_and_loveit_theme_config/" class="prev" rel="prev" title="Hugo and LoveIt Theme Config"><i class="fas fa-angle-left fa-fw"></i>Hugo and LoveIt Theme Config</a></div>
+</div>
+<div id="comments"><div id="utterances"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://utteranc.es/">Utterances</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.83.1">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Red Panda</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"utterances":{"darkTheme":"github-dark","issueTerm":"pathname","label":"","lightTheme":"github-light","repo":"yiyichen2020/yiyichen2020.github.io"}},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":"QN8LPVBWIX","algoliaIndex":"yiyichen2020.github.io","algoliaSearchKey":"dd6724a4c18d3504ec35349863816400","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
